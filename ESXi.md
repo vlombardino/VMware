@@ -41,5 +41,8 @@ esxcli software profile update --no-hardware-warning -d /vmfs/volumes/datastore/
 esxcli system maintenanceMode set -e false
 ```
 ```
+esxcli system maintenanceMode set -e true
+esxcli system maintenanceMode get
 esxcli software vib update -d /vmfs/volumes/datastore/VMware-ESXi-7.0U3k-21313628-depot.zip
+esxcli system maintenanceMode set -e false
 ```
